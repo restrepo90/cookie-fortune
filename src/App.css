@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    font-size: small;
+    
+}
+
+.main-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+  }
+
+  .main-items h1 {
+    background-color: rgba(255, 255, 255, 0.83);
+    border: 9px solid rgba(0, 0, 0, 0.654);
+    padding: 10px;
+    text-transform: uppercase;
+
+  }
+  
+  .box-container {
+    position: relative;
+  }
+  
+  .box-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
